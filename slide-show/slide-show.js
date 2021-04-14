@@ -4,13 +4,15 @@ let currentImageSrc;
 let prevImage = () => {
   currentImageSrc = document.getElementById("img").getAttribute("src");
   if (currentImageSrc === "./img/image-1.jpg") {
-    document.getElementById("img").setAttribute("src", "./img/image-4.jpg");
+    document.getElementById("img").setAttribute("src", "./img/image-5.jpg");
   } else if (currentImageSrc === "./img/image-2.jpg") {
     document.getElementById("img").setAttribute("src", "./img/image-1.jpg");
   } else if (currentImageSrc === "./img/image-3.jpg") {
     document.getElementById("img").setAttribute("src", "./img/image-2.jpg");
   } else if (currentImageSrc === "./img/image-4.jpg") {
     document.getElementById("img").setAttribute("src", "./img/image-3.jpg");
+  } else if (currentImageSrc === "./img/image-5.jpg") {
+    document.getElementById("img").setAttribute("src", "./img/image-4.jpg");
   }
 };
 
@@ -24,6 +26,8 @@ let nextImage = () => {
   } else if (currentImageSrc === "./img/image-3.jpg") {
     document.getElementById("img").setAttribute("src", "./img/image-4.jpg");
   } else if (currentImageSrc === "./img/image-4.jpg") {
+    document.getElementById("img").setAttribute("src", "./img/image-5.jpg");
+  } else if (currentImageSrc === "./img/image-5.jpg") {
     document.getElementById("img").setAttribute("src", "./img/image-1.jpg");
   }
 };
