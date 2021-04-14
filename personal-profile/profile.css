@@ -1,0 +1,30 @@
+body {
+  background-color: lightgrey;
+}
+
+section {
+  background-image: url("./bg.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
+
+a {
+  display: block;
+  color: white;
+  font-family: arial;
+  font-size: 16pt;
+}
+
+p.biography {
+  font-size: 12pt;
+}
+
+h3, p.biography {
+  color: white;
+}
