@@ -7,6 +7,7 @@ let checkPasswordLength = () => {
   return true;
 };
 
+// make sure passwords match
 let checkPasswordsMatch = () => {
   if (document.getElementById("input1").value === document.getElementById("input2").value) {
     return true;
@@ -16,6 +17,7 @@ let checkPasswordsMatch = () => {
 };
 
 
+// function that is called when the button is clicked
 let validatePassword = () => {
   let errorParagraph = "";
   if (!checkPasswordLength()) {
