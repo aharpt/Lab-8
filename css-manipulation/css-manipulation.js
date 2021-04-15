@@ -16,10 +16,7 @@ let changeBackground = () => {
   red = document.getElementById("red-2").value;
   green = document.getElementById("green-2").value;
   blue = document.getElementById("blue-2").value;
-  width = document.getElementById("width-2").value;
-  console.log(width);
   paragraph.style.backgroundColor = "rgb(" + red + ", "+ green + ", " + blue + ")";
-  paragraph.style.backgroundSize = width + "px";
 };
 
 let changeCSS = () => {
