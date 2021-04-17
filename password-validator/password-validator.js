@@ -21,10 +21,10 @@ let checkPasswordsMatch = () => {
 let validatePassword = () => {
   let errorParagraph = "";
   if (!checkPasswordLength()) {
-    errorParagraph = "<p class='error'>Please give a password that is at least 8 characters long</p>";
-    document.body.innerHTML += errorParagraph;
+    errorParagraph = "Please give a password that is at least 8 characters long";
+    document.querySelector(".error").innerHTML = errorParagraph;
   } else if (!checkPasswordsMatch()) {
-    errorParagraph = "<p class='error'>Your passwords do not match</p>";
-    document.body.innerHTML += errorParagraph;
+    errorParagraph = "Your passwords do not match";
+    document.querySelector(".error").innerHTML = errorParagraph;
   }
 };
